@@ -1,0 +1,126 @@
+.support {
+    padding: 50px 0;
+}
+.supportItem {
+    display: grid;
+    grid-template-columns: minmax(auto, 400px) minmax(auto, 730px);
+    grid-gap: 30px;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.supportItem div {
+
+    background: #eaf2f5;
+    border-radius: 40px;
+    padding: 50px 65px;
+
+}
+.supportItem img {
+    width: 100%;
+    height: auto;
+}
+.supportTitle {
+    font-family: 'Gilroy-Medium ☞';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+.supportText {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+   
+}
+.supportText p {
+    font-family: 'Gilroy-Medium ☞';
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.supportText p:last-child {
+    margin: 0;
+}
+.reverseItem {
+    grid-template-columns: minmax(auto, 730px) minmax(auto, 400px);
+    margin-top: 30px;
+}
+.supportChannel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eaf2f5;
+    flex-flow: row nowrap;
+    padding: 65px 54px;
+    border-radius: 30px;
+}
+.supportChannelText {
+    margin: 0;
+    font-family: 'Gilroy-Medium ☞';
+    max-width: 57%;
+    font-size: 17px;
+    line-height: 22px;
+}
+.supportChannel button {
+    margin-top: 0;
+    border-radius: 82px;
+    font-size: 20px;
+    line-height: 96.69%;
+    text-align: center;
+    letter-spacing: -.03em;
+}
+
+@media (max-width: 992px) {
+    .supportItem {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .supportItem div {
+        padding: 30px 20px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .reverseItem {
+        margin-bottom: 12px;
+    }
+    .supportItem img {
+        max-width: 210px;
+    }
+    .supportTitle {
+        font-size: 22px;
+        line-height: 1;
+        margin-bottom: 18px;
+    }
+    .supportText p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .supportChannel {
+        flex-flow: column nowrap;
+        gap: 20px;
+    }
+    .supportChannel img {
+        width: 76px;
+        height: 68px;
+        margin-bottom: 14px;
+    }
+    .supportChannelText {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .supportChannel button {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 24px 53px 21px 51px;
+        font-size: 15px;
+    }
+    .supportChannel {
+        text-align: center;
+        padding: 42px 25px 54px;
+    }
+}

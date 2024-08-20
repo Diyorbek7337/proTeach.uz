@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Archicoco Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Archicoco Regular'), url('./fonts/Archicoco/Archicoco.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'apertureregular';
+    src: url('./fonts/Aperture/aperture2.0-webfont.eot');
+    src: url('./fonts/Aperture/aperture2.0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Aperture/aperture2.0-webfont.woff2') format('woff2'),
+         url('./fonts/Aperture/aperture2.0-webfont.woff') format('woff'),
+         url('./fonts/Aperture/aperture2.0-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Bold ☞'), url('./fonts/Gilroy/Gilroy-Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gilroy-Heavy ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Heavy ☞'), url('./fonts/Gilroy/Gilroy-Heavy.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gilroy-Light ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Light ☞'), url('./fonts/Gilroy/Gilroy-Light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gilroy-Medium ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Medium ☞'), url('./fonts/Gilroy/Gilroy-Medium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gilroy-Regular ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Regular ☞'), url('./fonts/Gilroy/Gilroy-Regular.woff') format('woff');
+  }

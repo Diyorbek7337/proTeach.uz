@@ -1,0 +1,27 @@
+.cursor {
+    display: inline-block;
+    height:46px;
+    vertical-align: middle;
+    width:13px;
+    background-color: black;
+    margin-left: 2px;
+ 
+  }
+  .cursor::after {
+    animation: blink 0.5s step-end infinite;
+  }
+  @keyframes blink {
+    0% {
+        opacity:1;
+      }
+      49% {
+        opacity:1;
+      }
+      50% {
+        opacity:0;
+      }
+      100% {
+        opacity:0;
+      }
+  }
+  

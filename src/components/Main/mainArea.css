@@ -1,0 +1,210 @@
+.containerS {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+.main {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    padding: 0 0 107px;
+
+}
+.main::before {
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: calc(50% - 590px);
+    bottom: 46.3%;
+    left: 0;
+    z-index: 7;
+    background: white;
+}
+.mainBox {
+    font-family: "Gilroy", sans-serif;
+    color: #22253b;
+    z-index: 6;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    background-color: #f9f8fd;
+    background-image: url("../../image/main_bg.jpg");
+    background-position: 50% -491px;
+    background-repeat: no-repeat;
+    
+}
+.mainContent {
+    padding: 125px 0 0;
+    display: flex;
+    justify-content: space-between
+    ;
+}
+.leftContent {
+    width: 50%;
+}
+.leftContentTitle .leftContentText{
+    font-size: 46px;
+    font-family: 'Gilroy-Medium ☞';
+    font-weight: 400;
+}
+.leftContentTitle .leftContentText em {
+    font-family: 'Gilroy-Heavy ☞';
+}
+.brace {
+    color:#f15525 ;
+}
+.mainLogoName {
+    display: inline-block;
+    font-size: 46px;
+}
+.startLearn {
+    display: flex;
+    align-items: center;
+    padding: 25px 46px 25px 48px;
+    background-color: #f15525;
+    border-radius: 82px;
+    font-size: 20px;
+    line-height: 96.69%;
+    text-align: center;
+    letter-spacing: -.03em;
+    color: #fff;
+    transition: background-color .3s !important;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: 'Gilroy-Medium ☞';
+    margin-top: 30px;
+}
+.startLearn:hover {
+    background-color: #38bff2;
+    transition: background-color .3s !important;
+}
+
+.mainBox::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 7;
+    width: 100%;
+    height: 55px;
+    background: transparent url(https://ytyt.ru/home/img/line.svg) 50% 0 no-repeat;
+
+}
+.main::after {
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: calc(50% - 590px);
+    bottom: 46.3%;
+    right: 0;
+    z-index: 6;
+    background: white;
+}
+.scrollDown {
+    position: absolute;
+    left: 50%;
+    z-index: 7;
+    bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    color: #22253b;
+}
+.scrollIcon {
+    width: 1.07em;
+}
+.scrollIcon {
+    animation: scrollDown 2.5s ease-in infinite;
+}
+
+@keyframes scrollDown {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(3px);
+    }
+    60% {
+        transform: translateY(1px);
+    }
+}
+
+@media (max-width: 1160px) {
+    .mainContent {
+        max-width: 1160px;
+    }
+}
+@media (max-width: 992px) {
+    .mainBox {
+        background-image: url("../../image/circles_bg.jpg");
+        background-position: 35px 38px;
+        background-size: cover;
+    }
+    .mainContent {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+
+    }
+    .leftContentTitle .leftContentText, .mainLogoName {
+        font-size: 24px;
+        text-align: center;
+    }
+    .leftContent {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        width: 80%;
+    }
+    .rightContent {
+        width: 210px;
+        height: 220px;
+    }
+    .rightContent svg{
+        width: 100%;
+        height: 100%;
+    }
+    .startLearn {
+        font-size: 18px;
+    }
+}
+@media (max-width: 928px) {
+    .mainBox {
+        background-image: url("../../image/circles_bg.jpg");
+        background-position: 35px 95px;
+        background-size: cover;
+    }
+}
+@media (max-width: 830px) {
+    .mainBox {
+        background-image: url("../../image/circles_bg.jpg");
+        background-position: 25px 150px;
+        background-size: cover;
+    }
+}
+@media (max-width: 760px) {
+    .mainBox {
+        background-image: url("../../image/circles_bg.jpg");
+        background-position: 25px 230px;
+        background-size: cover;
+    }
+}
+@media (max-width: 736px) {
+    .mainBox {
+        background-image: url("../../image/circles_bg.jpg");
+        background-position: calc(50% + 25px) calc(50% + 240px);
+        background-size: cover;
+    }
+    .startLearn {
+        padding: 28px 46px 26px 48px;
+        font-size: 16px;
+    }
+}

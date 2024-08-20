@@ -1,0 +1,109 @@
+.courses {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: url("../../image/circles_bg.jpg");
+    background-position: calc(50% + 80px) calc(50% + 200px);
+}
+
+.coursesTitle {
+    font-family: 'Gilroy-Medium ☞';
+    font-size: 17px;
+    margin: 0 auto 30px;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 1;
+    text-align: center;
+}
+
+.courseBox {
+    display: flex;
+    align-items: stretch !important;
+    flex-wrap: wrap;
+}
+
+.courseItem {
+    /* width: 33%; */
+    border-radius: .5rem;
+    background-color: #c7e4ef !important;
+    /* flex: 1 2 auto; */
+    height: 100% !important;
+    cursor: grab;
+    border: none !important;
+}
+
+.cardImage .card-img-top {
+    width: 100% !important;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    height: 100%;
+}
+
+.cardImage {
+    padding: 5px 5px 0;
+    height: 280px;
+}
+
+.courseBody {
+    padding: 1.4rem 1.8rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.courseBody .card-title {
+    font-family: 'Gilroy-Medium ☞';
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+}
+
+.cardText {
+    font-size: 16px;
+    line-height: 15px;
+    font-family: 'Gilroy-Medium ☞';
+    border-bottom: 1px solid rgba(0, 0, 0, 0.354);
+    margin-bottom: 20px;
+}
+
+.cardFeatures {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cardFeature {
+    border-right: 1px solid rgba(0, 0, 0, 0.354);
+}
+
+.cardFeature:last-child {
+    border: none;
+}
+
+
+.cardFeature:first-child {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.cardFeature:nth-child(2) {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.cardFeature h4 {
+    font-family: 'Gilroy-Medium ☞';
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.cardFeature p {
+    font-size: 14px;
+    line-height: 15px;
+    font-family: 'Gilroy-Medium ☞';
+}

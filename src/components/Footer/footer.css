@@ -1,0 +1,111 @@
+.footerLogo h2{
+    font-size: 24px;
+    font-family: 'Gilroy-Medium ☞';
+    font-weight: 400;
+}
+.footerLogo h2 em {
+    font-family: 'Gilroy-Heavy ☞';
+}
+
+.footerLogo .brace {
+    color:#f15525 ;
+    font-size: 30px;
+}
+.footerLogo .mainLogoName {
+    display: inline-block;
+    font-size: 30px;
+}
+.footerSocial {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 30px;
+}
+.footerSocial a {
+    font-size: 24px;
+    /* color: #f15525;     */
+}
+.instagram {
+    color:  #f15525;
+}
+.telegram  {
+    color: #38BFF2;
+}
+.youtube {
+    color: red;
+}
+.footerContentTwo .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    font-size: 14px;
+}
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.tel {
+    color: #38BFF2;
+}
+.footerContentTwo {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'Gilroy-Medium ☞';
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: #22253b;
+}
+.footerLocation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.address {
+    color: #8e8e8e;
+}
+.address:hover, .mail:hover {
+    color: #f15525;
+}
+.footerLogoContinue {
+    font-size: 16px;
+    color: #8e8e8e;
+    width: 30%;
+    margin-left: 10px;
+    margin-bottom: 0 !important;
+}
+.footerLogoTitle {
+    display: flex;
+    align-items: center;
+}
+
+.footerBottom {
+    color: #8e8e8e;
+    padding: 20px 0;
+    border-top: 1px solid #8e8e8e;
+    text-align: center;
+}
+.mail {
+    color: #22253b !important;
+}
+@media (max-width: 992px) {
+    .footerWrapper, .footerLocation, .footerContentTwo, .footerWrapper .menu   {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .footerSocial, .footerLogoTitle {
+       justify-content: center;
+       align-items: center;
+    }
+    .footerSocial {
+        margin-bottom: 50px;
+    }
+
+}
