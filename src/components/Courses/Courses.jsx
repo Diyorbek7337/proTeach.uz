@@ -7,6 +7,7 @@ import Grammar from "../../image/grammar.webp"
 import Kids from "../../image/kids.webp"
 import CEFR from "../../image/cefr.AVIF"
 import Math from "../../image/math.jpg"
+import Animation from "../../image/3d.png"
 import Card from 'react-bootstrap/Card';
 import "swiper/css";
 import "swiper/css/navigation";
@@ -228,6 +229,33 @@ function Courses() {
                                     <div className='cardFeature'>
                                         <h4>1 oy</h4>
                                         <p>200 ming</p>
+                                    </div>
+                                </div>
+                            </Card.Body>
+                        </Card>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Card className='courseItem'>
+                            <div className='cardImage'>
+                                <Card.Img variant="top" src={Animation} />
+                            </div>
+                            <Card.Body className='courseBody'>
+                                <Card.Title>3D Animatsiya</Card.Title>
+                                <Card.Text>
+                                Kurs 3D dunyosining asoslaridan ilg‘or texnikalargacha o‘rgatadi. Siz 3D modellashtirish, animatsiya, teksturalash, yorug‘lik va renderingni o‘rganasiz. Tajribali mutaxassislar darslarini professional bilim va ko‘nikmalarni rivojlantirish uchun olib boradi.
+                                </Card.Text>
+                                <div className='cardFeatures'>
+                                    <div className='cardFeature'>
+                                        <h4>Abror</h4>
+                                        <p>Animator</p>
+                                    </div>
+                                    <div className='cardFeature'>
+                                        <h4>Davomiyligi</h4>
+                                        <p>8 oy</p>
+                                    </div>
+                                    <div className='cardFeature'>
+                                        <h4>1 oy</h4>
+                                        <p>400 ming</p>
                                     </div>
                                 </div>
                             </Card.Body>

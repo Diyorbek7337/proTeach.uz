@@ -1,24 +1,21 @@
 import { useState } from 'react'
 import './App.css'
-import MainArea from './components/Main/MainArea'
-import About from './components/About/About'
-import Features from './components/Features/Features'
-import Courses from './components/Courses/Courses'
-import Support from './components/Support/Support'
-import Footer from './components/Footer/Footer'
+import GroupPages from './components/Group/GroupPages';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Route, Routes } from "react-router-dom";
+import SiteMap from "../src/sitemap.xml";
+import Robots from "../src/robots.txt";
 
 
 function App() {
 
   return (
     <>
-      <MainArea/>
-      <Features/>
-      <Courses/>
-      <Support/>
-      <Footer/>
+      <Routes>
+          <Route path="/" element={<GroupPages/>} />
+          <Route path="/sitemap" element={<SiteMap/>} />
+          <Route path="/robots" element={<Robots/>} />
+      </Routes>
     </>
   )
 }

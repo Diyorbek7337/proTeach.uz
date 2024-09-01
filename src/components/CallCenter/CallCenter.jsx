@@ -80,6 +80,7 @@ function CallCenter() {
                                 <option value="Englishkids">English Kids</option>
                                 <option value="cefr">Cefr</option>
                                 <option value="math">Math</option>
+                                <option value="animatsiya">3D Animatsiya</option>
                             </Form.Select>
                         </Form.Group>
                     </Form>
