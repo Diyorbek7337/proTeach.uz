@@ -26,7 +26,7 @@ function Footer() {
                     </div>
                     <div className='footerSocial'>
                         <a href='#' className='instagram'><FaInstagram /></a>
-                        <a href='#' className='telegram'><FaTelegram /></a>
+                        <a href='https://t.me/ProTeach_Uz' className='telegram'><FaTelegram /></a>
                         <a href='#' className='youtube'><IoLogoYoutube /></a>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ function Footer() {
                             <p><a href='mailto:info@proTeach.uz' className='mail'>info@ProTeach.uz</a></p>
                         </div>
                         <div className='footerLocationItem'>
-                            <p><a className='address' href='#'>Sho'rchi tumani,<br></br> Mustaqillik ko'chasi,<br></br> 41-uy</a></p>
+                            <p><a className='address' target='_blank' href='https://maps.app.goo.gl/HCohdNuNJD6eGkxx8'>Sho'rchi tumani,<br></br> Mustaqillik ko'chasi,<br></br> 41-uy</a></p>
                         </div>
                     </div>
                 </div>

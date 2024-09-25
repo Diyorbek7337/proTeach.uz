@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 .menu li:hover a{
     color: #f15525;
 }
@@ -51,8 +52,8 @@
     color: #000 !important;
 }
 
-.menu li:hover {
-    color: rgb(241, 85, 37);
+.menu li a:hover {
+    color: rgb(241, 85, 37) !important;
     cursor: pointer;
 }
 
@@ -170,6 +171,74 @@
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
+.sidebar-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    height: 100%;
+    width: 250px;
+    background-color: white;
+    color: #000 ;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+}
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar-close {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.sidebar-menu li {
+    margin: 20px 0;
+}
+
+.sidebar-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
 
 @media (max-width: 1160px) {
     .navBox {
@@ -188,9 +257,15 @@
         display: none;
     }
 
-    .mobileLogin,
+    /* .mobileLogin, */ /* onlayn platforma yaratganimizdan keyin qo'shiladi */
     .mobileMenu {
         display: block;
+    }
+    .mobileMenuLists {
+        display: block;
+        padding: 0;
+        font-size: 22px;
+        line-height: 40px;
     }
 
 

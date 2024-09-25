@@ -1,10 +1,12 @@
 {
   "name": "educenter",
+  "homepage": "https://proteach.uz/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "test": "vitest",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

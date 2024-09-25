@@ -23,6 +23,7 @@ export const modalSlice = createSlice({
         [action.payload.name]: action.payload.value
       };
     },
+  
     resetFormData: (state) => {
       state.formData = {
         name: '',
