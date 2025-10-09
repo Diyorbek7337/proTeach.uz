@@ -1,0 +1,14 @@
+# ProTeach Academy - Security Contact Information
+# Learn more: https://securitytxt.org/
+
+Contact: mailto:security@proteach.uz
+Contact: tel:+998903777337
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: uz, ru, en
+Canonical: https://proteach.uz/.well-known/security.txt
+
+# Our security policy
+Policy: https://proteach.uz/security-policy
+
+# Acknowledgments page (optional)
+# Acknowledgments: https://proteach.uz/security-thanks

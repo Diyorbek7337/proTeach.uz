@@ -1,0 +1,101 @@
+# ProTeach Academy - .htaccess Configuration
+
+# Enable Rewrite Engine
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Force HTTPS (SSL)
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Force WWW to non-WWW (or vice versa)
+  # Uncomment ONE of these options:
+  
+  # Option 1: Force non-WWW
+  RewriteCond %{HTTP_HOST} ^www\.proteach\.uz [NC]
+  RewriteRule ^(.*)$ https://proteach.uz/$1 [L,R=301]
+  
+  # Option 2: Force WWW (comment out option 1 and uncomment this)
+  # RewriteCond %{HTTP_HOST} ^proteach\.uz [NC]
+  # RewriteRule ^(.*)$ https://www.proteach.uz/$1 [L,R=301]
+
+  # Remove trailing slash
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [L,R=301]
+
+  # Block access to sensitive files
+  RewriteRule ^\.env$ - [F,L]
+  RewriteRule ^\.git - [F,L]
+</IfModule>
+
+# Compression (Gzip)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Images
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  
+  # CSS and JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  
+  # Fonts
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+  
+  # HTML
+  ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+  # X-Frame-Options (prevent clickjacking)
+  Header set X-Frame-Options "SAMEORIGIN"
+  
+  # X-Content-Type-Options
+  Header set X-Content-Type-Options "nosniff"
+  
+  # X-XSS-Protection
+  Header set X-XSS-Protection "1; mode=block"
+  
+  # Referrer Policy
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  
+  # Permissions Policy
+  Header set Permissions-Policy "geolocation=(self), microphone=(), camera=()"
+</IfModule>
+
+# Custom Error Pages (optional)
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# Protect WordPress files (if using WordPress)
+# <FilesMatch "^(wp-config\.php|\.htaccess|\.htpasswd)$">
+#   Order Allow,Deny
+#   Deny from all
+# </FilesMatch>
+
+# Prevent directory browsing
+Options -Indexes
+
+# Follow symlinks
+Options +FollowSymLinks
+
+# UTF-8 encoding
+AddDefaultCharset UTF-8

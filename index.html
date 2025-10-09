@@ -1,52 +1,236 @@
 <!doctype html>
-<html lang="en">
+<html lang="uz">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./public/proTeach.ico" />
+  <link rel="icon" type="image/x-icon" href="/proTeach.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>ProTeach Academy | Sho'rchidagi Eng Yaxshi IT va Xorijiy Tillar Kurslari</title>
+  <meta name="title" content="ProTeach Academy | Sho'rchidagi Eng Yaxshi IT va Xorijiy Tillar Kurslari">
   <meta name="description"
-    content="ProTeach Academyda Frontend, Backend, CEFR, Mental Arifmetika, English Kids, English Grammar, Kompyuter Savodxonligi, 3D Animatsiya va boshqa kurslar bilan ta'lim oling. Qulay sharoitlar va malakali o'qituvchilar sizni kutmoqda!">
+    content="ProTeach Academyda Frontend, Backend, CEFR, Mental Arifmetika, English Kids, IELTS, Kompyuter Savodxonligi, 3D Animatsiya va boshqa kurslar bilan professional ta'lim oling. Qulay sharoitlar va malakali o'qituvchilar sizni kutmoqda! ☎️ +998 90 377 73 37">
   <meta name="keywords"
-    content="Frontend kurslari, Backend kurslari, Sho'rchida IT kurslar, Surxondaryoda kurslar, Shurchida  IT kurslar, Kompyuter savodxonligi, IELTS kurslari, ProTeach Academy, kurslar, dasturlash, IELTS, JavaScript, React, HTML, CSS, Javascript, Bootstrap, Nodejs, Express JS, MongoDB, IT,Shurchi Ayti, Шурчи ИТ, Шурчи Айти, Шурчи Дастурлаш, Шурчи Замонавий касблар, Шурчи Хорижий тиллар, Shurchi Xorijiy tillar, Sho'rchi Xorijiy tillar">
+    content="Frontend kurslari, Backend kurslari, Sho'rchida IT kurslar, Surxondaryoda kurslar, Shurchida IT kurslar, Kompyuter savodxonligi, IELTS kurslari, ProTeach Academy, dasturlash kurslari, IELTS, JavaScript, React, HTML, CSS, Bootstrap, Nodejs, Express JS, MongoDB, IT kurslari, Shurchi Ayti, Шурчи ИТ, Шурчи Айти, Шурчи Дастурлаш, Шурчи Замонавий касблар, Шурчи Хорижий тиллар, Shurchi Xorijiy tillar, Sho'rchi Xorijiy tillar, Mental arifmetika, 3D animatsiya, CEFR, English Grammar">
   <meta name="author" content="ProTeach Academy">
-  <link rel="canonical" href="https://proteach.uz">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://proteach.uz/">
+  
+  <!-- Google Site Verification -->
   <meta name="google-site-verification" content="eWeJU8DargKGWdbinTZMyY_Jnc5BvWYq-RES9N5IrMs" />
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="ProTeach Academy: Sho'rchidagi Eng Yaxshi IT va Xorijiy tillar kurslari">
-  <meta property="og:description"
-    content="ProTeach Academyda Frontend, Backend, IELTS, Mental Arifmetika va boshqa kurslar bilan ta'lim oling. Qulay sharoitlar va malakali o'qituvchilar sizni kutmoqda!">
-  <meta property="og:url" content="https://proteach.uz/">
+  
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <title>ProTeach Academy | Sho'rchi IT Center</title>
+  <meta property="og:url" content="https://proteach.uz/">
+  <meta property="og:site_name" content="ProTeach Academy">
+  <meta property="og:title" content="ProTeach Academy | Sho'rchidagi Eng Yaxshi IT va Xorijiy Tillar Kurslari">
+  <meta property="og:description"
+    content="ProTeach Academyda Frontend, Backend, IELTS, Mental Arifmetika va boshqa kurslar bilan professional ta'lim oling. Qulay sharoitlar va malakali o'qituvchilar sizni kutmoqda!">
+  <meta property="og:image" content="https://proteach.uz/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ProTeach Academy - IT va Xorijiy Tillar Kurslari">
+  <meta property="og:locale" content="uz_UZ">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://proteach.uz/">
+  <meta name="twitter:title" content="ProTeach Academy | Sho'rchidagi Eng Yaxshi IT va Xorijiy Tillar Kurslari">
+  <meta name="twitter:description"
+    content="ProTeach Academyda Frontend, Backend, IELTS, Mental Arifmetika va boshqa kurslar bilan professional ta'lim oling.">
+  <meta name="twitter:image" content="https://proteach.uz/og-image.png">
+  <meta name="twitter:image:alt" content="ProTeach Academy - IT va Xorijiy Tillar Kurslari">
+  
+  <!-- Telegram -->
+  <meta property="telegram:channel" content="@ProTeach_Uz">
+  
+  <!-- Additional Meta Tags -->
+  <meta name="theme-color" content="#4F46E5">
+  <meta name="msapplication-TileColor" content="#4F46E5">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="UZ-SU">
+  <meta name="geo.placename" content="Shurchi">
+  <meta name="geo.position" content="37.9961376;67.7895035">
+  <meta name="ICBM" content="37.9961376, 67.7895035">
+  
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "ProTeach Academy",
+    "alternateName": "ProTeach IT Center",
+    "url": "https://proteach.uz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://proteach.uz/logo.png",
+      "width": 250,
+      "height": 250
+    },
+    "image": "https://proteach.uz/og-image.png",
+    "description": "Sho'rchidagi professional IT va xorijiy tillar o'quv markazi. Frontend, Backend, IELTS, Mental Arifmetika va boshqa kurslar.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Mustaqillik ko'chasi, 41",
+      "addressLocality": "Shurchi",
+      "addressRegion": "Surxondaryo",
+      "postalCode": "191500",
+      "addressCountry": "UZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "37.9961376",
+      "longitude": "67.7895035"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+998903777337",
+        "contactType": "Customer Service",
+        "areaServed": "UZ",
+        "availableLanguage": ["uz", "ru", "en"]
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/proteachacademy/",
+      "https://www.facebook.com/proteachacademy",
+      "https://t.me/ProTeach_Uz"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "150"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Kurslar",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Course",
+            "name": "Frontend Dasturlash",
+            "description": "HTML, CSS, JavaScript, React kurslari",
+            "provider": {
+              "@type": "Organization",
+              "name": "ProTeach Academy"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Course",
+            "name": "Backend Dasturlash",
+            "description": "Node.js, Express.js, MongoDB kurslari",
+            "provider": {
+              "@type": "Organization",
+              "name": "ProTeach Academy"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Course",
+            "name": "IELTS Tayyorlov",
+            "description": "IELTS imtihoniga professional tayyorlov",
+            "provider": {
+              "@type": "Organization",
+              "name": "ProTeach Academy"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Course",
+            "name": "Mental Arifmetika",
+            "description": "Bolalar uchun mental arifmetika kurslari",
+            "provider": {
+              "@type": "Organization",
+              "name": "ProTeach Academy"
+            }
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Bosh sahifa",
+        "item": "https://proteach.uz/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Local Business Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ProTeach Academy",
+    "image": "https://proteach.uz/logo.png",
+    "@id": "https://proteach.uz",
+    "url": "https://proteach.uz",
+    "telephone": "+998903777337",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Mustaqillik ko'chasi, 41",
+      "addressLocality": "Shurchi",
+      "addressRegion": "Surxondaryo",
+      "postalCode": "191500",
+      "addressCountry": "UZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.9961376,
+      "longitude": 67.7895035
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "ProTeach Academy",
-        "url": "https://proteach.uz",
-        "logo": "https://proteach.uz/logo.png",
-        "sameAs": [
-          "https://www.instagram.com/proteachacademy/",
-          "https://www.facebook.com/proteachacademy"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+998903777337",
-          "contactType": "Customer Service"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Shurchi, Mustaqillik street, 42",
-          "addressLocality": "Surkhandarya",
-          "postalCode": "191500",
-          "addressCountry": "UZ"
-        }
-      }
-      </script>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
