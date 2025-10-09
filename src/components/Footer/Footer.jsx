@@ -25,9 +25,8 @@ function Footer() {
                         </div>
                     </div>
                     <div className='footerSocial'>
-                        <a href='#' className='instagram'><FaInstagram /></a>
+                        <a href='https://www.instagram.com/proteachacademy/' className='instagram'><FaInstagram /></a>
                         <a href='https://t.me/ProTeach_Uz' className='telegram'><FaTelegram /></a>
-                        <a href='#' className='youtube'><IoLogoYoutube /></a>
                     </div>
                 </div>
                 <div className='footerContentTwo'>

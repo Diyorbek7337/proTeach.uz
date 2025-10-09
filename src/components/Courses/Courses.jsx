@@ -65,7 +65,7 @@ function Courses() {
                                     </div>
                                     <div className='cardFeature'>
                                         <h4>1 oy</h4>
-                                        <p>400 ming</p>
+                                        <p>500 ming</p>
                                     </div>
                                 </div>
                             </Card.Body>
@@ -88,11 +88,11 @@ function Courses() {
                                     </div>
                                     <div className='cardFeature'>
                                         <h4>Davomiyligi</h4>
-                                        <p>1 oy</p>
+                                        <p>8 oy</p>
                                     </div>
                                     <div className='cardFeature'>
-                                        <h4>8 oy</h4>
-                                        <p>400 ming</p>
+                                        <h4>1 oy</h4>
+                                        <p>500 ming</p>
                                     </div>
                                 </div>
                             </Card.Body>
@@ -110,12 +110,12 @@ function Courses() {
                                 </Card.Text>
                                 <div className='cardFeatures'>
                                     <div className='cardFeature'>
-                                        <h4>Xolto'rayev M</h4>
+                                        <h4>Sobirov A</h4>
                                         <p>Informatik</p>
                                     </div>
                                     <div className='cardFeature'>
                                         <h4>Davomiyligi</h4>
-                                        <p>1 oy</p>
+                                        <p>2 oy</p>
                                     </div>
                                     <div className='cardFeature'>
                                         <h4>1 oy</h4>
@@ -146,7 +146,7 @@ function Courses() {
                                     </div>
                                     <div className='cardFeature'>
                                         <h4>1 oy</h4>
-                                        <p>200 ming</p>
+                                        <p>250 ming</p>
                                     </div>
                                 </div>
                             </Card.Body>
@@ -164,7 +164,7 @@ function Courses() {
                                 </Card.Text>
                                 <div className='cardFeatures'>
                                     <div className='cardFeature'>
-                                        <h4>Tursunova Sh</h4>
+                                        <h4>Tursunova N</h4>
                                         <p>English Teacher</p>
                                     </div>
                                     <div className='cardFeature'>
@@ -173,7 +173,7 @@ function Courses() {
                                     </div>
                                     <div className='cardFeature'>
                                         <h4>1 oy</h4>
-                                        <p>200 ming</p>
+                                        <p>250 ming</p>
                                     </div>
                                 </div>
                             </Card.Body>
@@ -200,7 +200,7 @@ function Courses() {
                                     </div>
                                     <div className='cardFeature'>
                                         <h4>1 oy</h4>
-                                        <p>250 ming</p>
+                                        <p>400 ming</p>
                                     </div>
                                 </div>
                             </Card.Body>
@@ -218,7 +218,7 @@ function Courses() {
                                 </Card.Text>
                                 <div className='cardFeatures'>
                                     <div className='cardFeature'>
-                                        <h4>Abdug'aniyeva A</h4>
+                                        <h4>Abduqayumov A</h4>
                                         <p>Math Teacher</p>
                                     </div>
                                     <div className='cardFeature'>
@@ -227,7 +227,7 @@ function Courses() {
                                     </div>
                                     <div className='cardFeature'>
                                         <h4>1 oy</h4>
-                                        <p>200 ming</p>
+                                        <p>250 ming</p>
                                     </div>
                                 </div>
                             </Card.Body>
